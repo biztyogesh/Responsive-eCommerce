@@ -1,3 +1,4 @@
+// App.tsx
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Components/Home/Home";
@@ -5,6 +6,10 @@ import Shop from "./Components/Shop/Shop";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import { ReactComponent as Frame } from "./assets/Frame.svg";
+import { ReactComponent as Men } from "./assets/Men.svg";
+import { ReactComponent as Search } from "./assets/Search.svg";
+import { ReactComponent as Heart } from "./assets/Heart.svg";
+import { ReactComponent as Shopping } from "./assets/Shopping.svg";
 import "./App.css";
 
 const App = () => {
@@ -12,7 +17,6 @@ const App = () => {
     <Router>
       <header>
         <nav className="navbar">
-          {/* <Link to="/" className="logo">Furniro</Link> */}
           <Frame />
           <ul className="nav-links">
             <li>
@@ -28,6 +32,12 @@ const App = () => {
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
+          <div className="icons">
+            <Men />
+            <Search />
+            <Heart />
+            <Shopping />
+          </div>
         </nav>
       </header>
 

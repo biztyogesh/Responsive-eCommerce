@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Arial", sans-serif;
   background-color: #f5f5f5;
 }
@@ -7,32 +12,73 @@ body {
 header {
   background-color: #fff;
   padding: 20px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
 
-  .logo {
-    font-size: 24px;
-    color: #d0a94f;
-    text-decoration: none;
+.navbar svg {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 90px;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d4a437;
+}
+
+/* Icons styling */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.icons svg {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+.icons svg:hover {
+  fill: #ead9b4;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+    margin-top: 20px;
+    gap: 20px;
+  }
 
-    li {
-      a {
-        text-decoration: none;
-        color: #333;
-        font-size: 16px;
-
-        &:hover {
-          color: #d0a94f;
-        }
-      }
-    }
+  .icons {
+    margin-top: 20px;
   }
 }
