@@ -1,10 +1,15 @@
 // export default ImageGallery;
 import React, { useState } from "react";
 import "./Images.scss";
+import "./Gallery.scss";
 import data from "../../utils/data.json";
 import image99 from "../../assets/images/image99.png";
 import image100 from "../../assets/images/image100.png";
 import image101 from "../../assets/images/image101.png";
+import rect24 from "../../assets/images/Rectangle24.png";
+import rect25 from "../../assets/images/Rectangle25.png";
+import rect40 from "../../assets/Rectangle40.png";
+import { Button } from "semantic-ui-react";
 
 interface Image {
   id: number;
@@ -65,17 +70,30 @@ function ImageGallery() {
         <button className="show-more">Show More</button>
       </section>
 
-      {/* Beautiful Rooms Inspiration */}
-      {/* <section className="gallery-section inspiration-section">
-        <h2>50+ Beautiful Rooms Inspiration</h2>
-        <div className="inspiration-grid">
-          {inspirationImages.map((image) => (
-            <div key={image.id} className="inspiration-card">
-              <img src={image.src} alt={image.title} />
+      <section>
+        <div className="room-inspiration-container">
+          <div className="text-section">
+            <h2>50+ Beautiful rooms inspiration</h2>
+            <p>Our designer already made a lot of beautiful prototypes of rooms that inspire you.</p>
+            <Button className="explore-btn">Explore More</Button>
+          </div>
+          <div className="image-section">
+            <div className="image-card">
+              <img src={rect24} alt="Room Inspiration 1" />
+              <div className="image-text">
+                <p>01 &mdash; Bed Room</p>
+                <h3>Inner Peace</h3>
+              </div>
             </div>
-          ))}
+            <div className="image-card">
+              <img src={rect25} alt="Room Inspiration 2" />
+            </div>
+            <div className="image-card">
+              <img src={rect40} alt="Room Inspiration 3" />
+            </div>
+          </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
