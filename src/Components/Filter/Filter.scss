@@ -1,0 +1,52 @@
+.product-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #f9f1e7;
+  margin-top: 320px;
+
+  .filter-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .filter-button,
+    .view-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .result-count {
+      font-size: 14px;
+      color: #000000;
+    }
+  }
+
+  .sorting-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .show-label,
+    .sort-label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .show-count-input {
+      width: 40px;
+      text-align: center;
+      border: 1px solid #000000;
+      padding: 4px;
+    }
+
+    .sort-select {
+      padding: 5px 10px;
+      border: 1px solid #000000;
+    }
+  }
+}

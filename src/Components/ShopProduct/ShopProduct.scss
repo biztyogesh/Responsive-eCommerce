@@ -1,0 +1,96 @@
+/* Gallery Section Styling */
+.gallerysection {
+  padding: 50px 30px;
+  width: 100%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Product Grid */
+.productgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between items */
+  justify-content: center;
+  padding: 50px;
+}
+
+/* Product Card */
+.productcard {
+  background: white;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 350px; /* Fixed height for uniformity */
+}
+
+/* Product Image */
+.productimage {
+  width: 100%;
+  height: 250px; /* Set height to fit design */
+  // position: relative
+  // overflow: hidden;
+}
+
+.productimage img {
+  border-radius: none;
+  width: 100%;
+  height: 100%; /* Ensures the image fills the designated area */
+  object-fit: cover; /* Ensures image covers the area */
+}
+
+.productdiscount,
+.productnew {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5c5c;
+  color: white;
+  padding: 5px 2px;
+  font-size: 0.85rem;
+}
+
+.productnew {
+  background-color: #00c853;
+  left: auto;
+  right: 10px;
+}
+
+.productinfo {
+  padding: 10px;
+  text-align: left;
+  height: 150px;
+}
+
+.productinfo h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.productinfo p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.productprice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 5px;
+}
+
+.productprice .originalprice {
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
+}

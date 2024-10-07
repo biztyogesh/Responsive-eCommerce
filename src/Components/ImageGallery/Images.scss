@@ -216,7 +216,7 @@ h2 {
 /* Product Grid */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
   gap: 20px; /* Space between items */
   justify-content: center;
   padding: 50px;
@@ -225,7 +225,6 @@ h2 {
 /* Product Card */
 .product-card {
   background: white;
-  border-radius: 5px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -237,18 +236,17 @@ h2 {
 .product-image {
   width: 100%;
   height: 250px; /* Set height to fit design */
-  position: relative;
-  overflow: hidden;
+  // position: relative
+  // overflow: hidden;
 }
 
 .product-image img {
-  border-radius: 5px;
+  border-radius: none;
   width: 100%;
   height: 100%; /* Ensures the image fills the designated area */
   object-fit: cover; /* Ensures image covers the area */
 }
 
-/* Badges for Discount and New Products */
 .product-discount,
 .product-new {
   position: absolute;
@@ -256,9 +254,8 @@ h2 {
   left: 10px;
   background-color: #ff5c5c;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 2px;
   font-size: 0.85rem;
-  border-radius: 20px;
 }
 
 .product-new {
@@ -267,38 +264,36 @@ h2 {
   right: 10px;
 }
 
-/* Product Info */
 .product-info {
-  padding: 10px; /* Reduced padding for alignment */
+  padding: 10px;
   text-align: left;
-  height: 150px; /* Fixed height for uniformity */
+  height: 150px;
 }
 
 .product-info h3 {
-  font-size: 1.25rem; /* Slightly larger font */
+  font-size: 1.25rem;
   font-weight: 600;
-  margin: 5px 0; /* Adjusted margins */
+  margin: 5px 0;
 }
 
 .product-info p {
-  margin: 5px 0; /* Adjusted margins */
+  margin: 5px 0;
   font-size: 0.9rem;
   color: #666;
 }
 
-/* Price Styling */
 .product-price {
   font-size: 1.2rem;
   font-weight: bold;
   color: #000;
-  margin-top: 5px; /* Adjusted for alignment */
+  margin-top: 5px;
 }
 
 .product-price .original-price {
   font-size: 0.85rem;
   text-decoration: line-through;
   color: #888;
-  margin-left: 10px; /* Spacing between prices */
+  margin-left: 10px;
 }
 
 /* Show More Button */

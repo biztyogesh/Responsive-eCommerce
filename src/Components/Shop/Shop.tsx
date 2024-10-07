@@ -1,10 +1,19 @@
 import React from "react";
 import "./Shop.scss";
+import FurniroShop from "../FurniroShop/FurniroShop";
+import Filter from "../Filter/Filter";
+import ShopProduct from "../ShopProduct/ShopProduct";
+import FeaturesSection from "../FeaturesSection/FeaturesSection";
+import Footer from "../Footer/Footer";
 
 const Shop = () => {
   return (
-    <div className="shop-page">
-      <h1>Shop Page</h1>
+    <div>
+      <FurniroShop />
+      <Filter />
+      <ShopProduct />
+      <FeaturesSection />
+      <Footer />
     </div>
   );
 };
