@@ -1,10 +1,12 @@
 .header {
   display: flex;
   width: 100%;
-  // height: 4rem;
+  height: 4rem;
   color: white;
-  // background-color: #4d488c;
-
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // z-index: 1000; /* Makes sure the header stays above other elements */
+  // padding: 15px 20px;
   .site-logo {
     cursor: pointer;
   }

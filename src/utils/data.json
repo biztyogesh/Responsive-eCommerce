@@ -135,5 +135,37 @@
     "description": "Outdoor bar table and stool.",
     "price": "$2999",
     "originalPrice": "Rs 2500"
+  },
+  {
+    "id": 17,
+    "src": "/assets/images/image201.png",
+    "title": "Respira",
+    "description": "Outdoor bar table and stool.",
+    "price": "$2999",
+    "originalPrice": "Rs 2500"
+  },
+  {
+    "id": 18,
+    "src": "/assets/images/image202.png",
+    "title": "Respira",
+    "description": "Outdoor bar table and stool.",
+    "price": "$2999",
+    "originalPrice": "Rs 2500"
+  },
+  {
+    "id": 19,
+    "src": "/assets/images/image203.png",
+    "title": "Respira",
+    "description": "Outdoor bar table and stool.",
+    "price": "$2999",
+    "originalPrice": "Rs 2500"
+  },
+  {
+    "id": 16,
+    "src": "/assets/images/image204.png",
+    "title": "Respira",
+    "description": "Outdoor bar table and stool.",
+    "price": "$2999",
+    "originalPrice": "Rs 2500"
   }
 ]

@@ -1,10 +1,11 @@
 import React from "react";
 import "./About.scss";
+import AsgaardHeader from "../AsgaardHeader/AsgaardHeader";
 
 const About = () => {
   return (
     <div className="about-page">
-      <h1>About Us</h1>
+      <AsgaardHeader />
     </div>
   );
 };
