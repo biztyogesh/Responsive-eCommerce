@@ -1,67 +1,80 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SingleProduct.scss";
+import sofa1 from "../../assets/images/sofa1.png";
+import Asgaardsofa2 from "../../assets/images/Asgaardsofa2.png";
+import Asgaardsofa3 from "../../assets/images/Asgaardsofa3.png";
+import Asgaardsofa4 from "../../assets/images/Asgaardsofa4.png";
+import Asgaardsofa5 from "../../assets/images/Asgaardsofa5.png";
+import { Icon, Rating } from "semantic-ui-react";
 
-const ProductCard: React.FC = () => {
-  const [selectedImage, setSelectedImage] = useState<string>("image1.png");
-  const [selectedSize, setSelectedSize] = useState<string>("M");
-  const [selectedColor, setSelectedColor] = useState<string>("black");
-
-  const images = ["Asgaardsofa1.png", "image2.png", "image3.png", "image4.png"];
-
+function SingleProduct() {
   return (
     <div className="product-card">
-      {/* Image Gallery */}
-      <div className="image-gallery">
-        <img src={selectedImage} alt="Main" className="main-image" />
+      <div className="product-images">
         <div className="thumbnail-images">
-          {images.map((image, idx) => (
-            <img key={idx} src={image} alt={`Thumbnail ${idx}`} className={`thumbnail ${image === selectedImage ? "active" : ""}`} onClick={() => setSelectedImage(image)} />
-          ))}
+          <img src={Asgaardsofa2} alt="Thumbnail 2" />
+          <img src={Asgaardsofa3} alt="Thumbnail 3" />
+          <img src={Asgaardsofa4} alt="Thumbnail 4" />
+          <img src={Asgaardsofa5} alt="Thumbnail 5" />
+        </div>
+        <div className="main-image">
+          <img src={sofa1} alt="Main Product" />
         </div>
       </div>
-
-      {/* Product Details */}
       <div className="product-details">
-        <h1>Asgaard Sofa</h1>
-        <p className="price">Rs. 250,000.00</p>
+        <h2 className="product-title">Asgaard Sofa</h2>
+        <p className="product-price">Rs. 250,000.00</p>
 
-        <div className="ratings">
-          <span>⭐⭐⭐⭐☆</span> <span>(5 Customer Reviews)</span>
-        </div>
-
-        <p className="description">Setting the bar as one of the loudest packers in its class, the Kilburn is a compact, stout-hearted...</p>
-
-        {/* Size Options */}
-        <div className="size-section">
-          <h4>Size</h4>
+        <Rating
+          defaultRating={4}
+          maxRating={5}
+          disabled
+          style={{
+            color: "#FFA500", // Orange color for filled stars
+          }}
+        />
+        <p className="product-description">
+          Setting the bar as one of the loudest speakers in its class, the
+          Kilburn is a compact, stout-hearted hero with a well-balanced audio
+        </p>
+        <div className="product-options">
           <div className="sizes">
-            {["S", "M", "L", "XL"].map((size) => (
-              <button key={size} className={`size-btn ${size === selectedSize ? "selected" : ""}`} onClick={() => setSelectedSize(size)}>
-                {size}
-              </button>
-            ))}
+            <label>Size:</label>
+            <button className="size-button">M</button>
+            <button className="size-button">L</button>
+            <button className="size-button">XL</button>
+            <button className="size-button">XS</button>
           </div>
         </div>
-
-        {/* Color Options */}
-        <div className="color-section">
-          <h4>Color</h4>
-          <div className="colors">
-            {["black", "brown", "white", "purple"].map((color) => (
-              <div key={color} className={`color-circle ${color} ${color === selectedColor ? "selected" : ""}`} onClick={() => setSelectedColor(color)}></div>
-            ))}
+        <div className="product-actions">
+          <div className="quantity-controls">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
           </div>
-        </div>
-
-        {/* Buttons */}
-        <div className="actions">
-          <input type="number" defaultValue={1} min={1} className="quantity-input" />
           <button className="add-to-cart">Add to Cart</button>
-          <button className="compare-btn">Compare</button>
+          <button className="compare">+ Compare</button>
+        </div>
+        <div className="additional-info">
+          <p>SKU: SS001</p>
+          <p>Category: Sofas</p>
+          <p>Tags: Sofa, Chair, Home, Shop</p>
+        </div>
+        <div className="social-share">
+          <span>Share: </span>
+          <a href="#">
+            <Icon name="facebook" />
+          </a>
+          <a href="#">
+            <Icon name="linkedin" />
+          </a>
+          <a href="#">
+            <Icon name="twitter" />
+          </a>
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default ProductCard;
+export default SingleProduct;
