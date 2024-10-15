@@ -1,21 +1,20 @@
-.product-card {
+.productt-card {
   display: flex;
   padding: 60px;
- 
+
   height: 100vh;
   background-color: #f9f7f4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
-  .product-images {
+  .productt-images {
     flex: 1;
     display: flex;
-    
-    
+
     .thumbnail-images {
       display: flex;
       flex-direction: column;
-      
+
       img {
         width: 60px;
         height: 60px;
@@ -26,7 +25,7 @@
       }
     }
 
-    .main-image {
+    .main-images {
       img {
         width: 300px;
         margin-left: 30px;
@@ -36,15 +35,14 @@
     }
   }
 
-  .product-details {
-
-    .product-title {
+  .productt-details {
+    .productt-title {
       font-size: 24px;
       font-weight: bold;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     }
 
-    .product-price {
+    .productt-price {
       font-size: 20px;
       color: #000000;
     }
@@ -55,19 +53,18 @@
       color: #ffd700;
     }
 
-    .product-description {
+    .productt-description {
       // margin: 6px;
       color: #000000;
       font-size: 14px;
     }
 
-    .product-options {
+    .productt-options {
       display: flex;
       margin: 30px 0;
-      
 
-
-      .size-button, .color-button {
+      .size-button,
+      .color-button {
         border: 1px solid skyblue;
         padding: 6px;
         margin-right: 9px;
@@ -75,11 +72,11 @@
       }
     }
 
-    .product-actions {
+    .productt-actions {
       display: flex;
       align-items: center;
       margin: 20px 0;
-      
+
       .quantity-controls {
         display: flex;
         align-items: center;
@@ -97,7 +94,8 @@
         }
       }
 
-      .add-to-cart, .compare {
+      .add-to-cart,
+      .compare {
         padding: 10px 15px;
         border: 1px solid #000;
         margin-right: 10px;
@@ -111,7 +109,7 @@
       margin-top: 40px;
       color: #000000;
       font-size: 18px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       p {
         margin: 12px 0;
       }
@@ -124,6 +122,68 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-right: 10px;
         color: #333;
       }
+    }
+  }
+}
+
+.product-details {
+  padding: 20px;
+  background-color: #f8f8f8;
+
+  .tabs-section {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 45px;
+
+    .tab {
+      background: none;
+      border: none;
+      margin-right: 20px;
+      padding: 10px 15px;
+      font-size: 18px;
+      cursor: pointer;
+      color: #000000;
+      font-weight: bold;
+
+      &.active {
+        color: #000000;
+        font-weight: bold;
+        border-bottom: 3px solid #5a2dae;
+      }
+    }
+  }
+
+  .content-section {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    // gap: 30px;
+    margin-top: 20px;
+
+    .description {
+      flex: 1;
+      color: #000000;
+      line-height: 1.6;
+      font-size: 18px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+      p {
+        margin-bottom: 45px;
+      }
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      // .product-image {
+      //   width: 100%;
+      //   max-width: 400px;
+      //   border-radius: 8px;
+      //   background-color: #eaeaea;
+      // }
     }
   }
 }
