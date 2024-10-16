@@ -1,9 +1,143 @@
-.contact-page {
-  padding: 20px;
-  background-color: #fff;
+// .banner-contact {
+//   position: relative;
+//   // height: 100vh;
+//   display: flex;
+//   // align-items: center;
+//   justify-content: end;
+//   // padding-right: 50px;
+//   // color: #fff3e3;
 
-  h1 {
-    font-size: 36px;
-    color: #333;
+//   .banner-image-contact{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     // width: 100%;
+//     // height: 100%;
+//     overflow: hidden;
+
+//     // img {
+//     //    width: 100%;
+//     //    height: 100%;
+//     //   object-fit: cover;
+//     // }
+//   }
+// }
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+
+  .contact-details {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #000000;
+    }
+
+    p {
+      font-size: 16px;
+      color: #888;
+      margin-bottom: 30px;
+    }
+
+    .details-section {
+      .detail {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+
+        span {
+          font-size: 24px;
+          color: #bfa144;
+          margin-right: 15px;
+        }
+
+        h4 {
+          font-size: 18px;
+          margin: 0 0 5px 0;
+          font-weight: 500;
+        }
+
+        p {
+          margin: 0;
+          color: #777;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    width: 55%;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      label {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      input, textarea {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease-in-out;
+
+        &:focus {
+          outline: none;
+          border-color: #bfa144;
+          background-color: #fff;
+        }
+      }
+
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+
+      .error-message {
+        color: #d9534f;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+    }
+
+    .submit-Button {
+      background-color: #bfa144;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #a6893b;
+      }
+    }
   }
 }

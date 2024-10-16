@@ -50,7 +50,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.79.3",
-    "prettier": "^3.0.1"
+    "prettier": "^3.0.1",
+    "sass": "^1.79.3"
   }
 }
