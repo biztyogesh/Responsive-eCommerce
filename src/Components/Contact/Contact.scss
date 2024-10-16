@@ -39,14 +39,15 @@
       font-size: 32px;
       font-weight: 600;
       margin-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: #000000;
     }
 
     p {
-      font-size: 16px;
-      color: #888;
-      margin-bottom: 30px;
+      font-size: 13px;
+      color: #000000;
+      margin-bottom: 70px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .details-section {
@@ -63,25 +64,25 @@
 
         h4 {
           font-size: 18px;
-          margin: 0 0 5px 0;
-          font-weight: 500;
+          margin: 0 0 8px 0;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         p {
           margin: 0;
-          color: #777;
-          font-size: 15px;
+          color: #000000;
+          font-size: 13px;
         }
       }
     }
   }
 
   .contact-form {
-    width: 55%;
+    width: 45%;
     background-color: #fff;
     padding: 30px;
     border: 1px solid #e1e1e1;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     .form-group {
@@ -91,22 +92,23 @@
 
       label {
         font-size: 16px;
-        font-weight: 500;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin-bottom: 8px;
-        color: #333;
+        color: #000000;
       }
 
       input, textarea {
         padding: 12px;
         border: 1px solid #ddd;
         border-radius: 5px;
-        font-size: 15px;
+        font-size: 12px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-color: #f9f9f9;
         transition: border-color 0.3s ease-in-out;
 
         &:focus {
           outline: none;
-          border-color: #bfa144;
+          border-color: #000000;
           background-color: #fff;
         }
       }
@@ -118,22 +120,23 @@
 
       .error-message {
         color: #d9534f;
-        font-size: 13px;
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin-top: 5px;
       }
     }
 
     .submit-Button {
-      background-color: #bfa144;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 5px;
+      // background-color: #bfa144;
+      // color: white;
+      // padding: 12px 24px;
+      // border: none;
+      // border-radius: 5px;
       cursor: pointer;
-      font-size: 18px;
-      font-weight: 600;
-      text-transform: uppercase;
-      transition: background-color 0.3s ease-in-out;
+      // font-size: 18px;
+      // font-weight: 600;
+      // text-transform: uppercase;
+      // transition: background-color 0.3s ease-in-out;
 
       &:hover {
         background-color: #a6893b;
