@@ -11,7 +11,34 @@
     background-color: $secondary-color;
   }
 
+  &-white-color {
+    background-color: $white-color;
+  }
+
   &-default-color {
     background-color: $default-color;
+  }
+
+  &-grey-shade-1 {
+    background-color: $grey-shade-1;
+  }
+
+  &-light-shade-1 {
+    background-color: $light-shade-1;
+  }
+  &-grey-shade-3 {
+    background-color: $grey-shade-3;
+  }
+  &-green {
+    background-color: $green-shade-1;
+  }
+  &-pastel-blue {
+    background-color: $pastel-blue;
+  }
+  &-grey-shade-7 {
+    background-color: $grey-shade-7;
+  }
+  &-grey-shade-9 {
+    background-color: $grey-shade-9;
   }
 }

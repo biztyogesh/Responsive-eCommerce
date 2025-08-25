@@ -1,0 +1,51 @@
+.auth-container {
+  margin: 0 auto;
+  color: white;
+  width: 65%;
+  background: linear-gradient(90deg, #4d488c 44.92%, rgba(77, 72, 140, 0.8) 100%);
+  border-radius: 50px;
+  max-width: 900px;
+  max-height: 500px;
+
+  .title-container {
+    margin-top: 5%;
+    margin-left: 8%;
+    width: 35%;
+
+    .title {
+      font-size: 58px;
+    }
+  }
+
+  .auth-outlet {
+    margin-left: 8%;
+  }
+}
+
+#bot {
+  color: white;
+}
+
+// For Large Displays
+// @media screen and (min-width: 1281px) {
+//   .auth-container {
+//     .title-container {
+//       margin-top: 20rem;
+//       margin-left: 7rem;
+//     }
+//   }
+// }
+@media screen and (max-width: 576px) {
+  .auth-container {
+    width: 85%;
+
+    .title-container {
+      .title {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+      }
+    }
+  }
+}
